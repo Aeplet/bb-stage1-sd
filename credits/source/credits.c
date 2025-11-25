@@ -183,8 +183,8 @@ int main(int argc, char **argv) {
 	}
 	
 	char filepath[15];
-	printf("Attempting to load %s\n", filepath);
 	sprintf(filepath, "%s:/boot.elf", device);
+	printf("Attempting to load %s\n", filepath);
 
 	FILE* f = fopen(filepath, "rb");
 	if (f == NULL) {
