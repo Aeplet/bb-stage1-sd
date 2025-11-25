@@ -1,4 +1,5 @@
 # A *very* thrown together build script just so people can use this.
+# modified by aep to use DKP compilers (good idea?)
 rm -f stage1.bin
 cd credits
 make clean
@@ -15,7 +16,7 @@ cd credits
 make
 cp credits.elf ../payload/
 cd ../payload/
-powerpc-eabi-strip credits.elf
+"$DEVKITPPC/bin/powerpc-eabi-strip" credits.elf
 ./make_it.sh credits.elf
 cd ../stage1/loader/
 make

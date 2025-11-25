@@ -2,7 +2,7 @@
 # This code is licensed to you under the terms of the GNU GPL, version 2;
 # see file COPYING or http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-CROSS ?= powerpc-eabi-
+CROSS ?= $(DEVKITPPC)/bin/powerpc-eabi-
 
 
 ifeq ($(origin CC), default)
